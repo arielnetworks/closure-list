@@ -5,6 +5,7 @@ Faster List UI for PC and Mobile.
 ### Demo
 
 1. Clone this project and change directory into it.
+1. Fetch libraries by ```./run.sh setup```.
 1. ```node server.js``` to start a demo server.
 1. Access ```localhost:1337``` in your browser.
 

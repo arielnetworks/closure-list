@@ -16,15 +16,20 @@ app.get('/', function(req, res) {
   res.redirect('piglovesyou/goog/demos/list.html');
 });
 
-var total = 90 * 1000; // 400;
+var total = 150; // 400;
 
 var createItems = function(offset, size) {
   var items = [];
   // console.log(offset, offset + size);
   for (var i = offset; i < offset + size && i < total; i++) {
+
+    var title = '';
+    var count = Math.floor(Math.random() * 50);
+    while (count--) title += 'yeah ';
+
     items.push({
       id: 'id' + i,
-      title: 'yeah',
+      title: title,
       body: 'ohh... '
     });
   }

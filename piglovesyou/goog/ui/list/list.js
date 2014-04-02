@@ -482,11 +482,7 @@ goog.ui.List.Item.prototype.getIndex = function() {
 /** @inheritDoc */
 goog.ui.List.Item.prototype.createDom = function() {
   var dh = this.getDomHelper();
-  // XXX: Adding height is kind of expensive process.
-  // We can relegate this to a module user.
-  this.setElementInternal(dh.createDom('div', {
-    style: 'height:' + this.height_ + 'px'
-  }));
+  this.setElementInternal(dh.createDom('div'));
 };
 
 

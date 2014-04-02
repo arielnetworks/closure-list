@@ -47,6 +47,9 @@
       background: #e9edf1;
       color: #9c999f;
     }
+    .goog-list .goog-list-container b {
+      color: black;
+    }
     .goog-list .goog-list-container > div:last-child {
       border-bottom: none;
     }
@@ -135,7 +138,7 @@
     }
 
     function renderer(data) {
-      return 'id: ' + data['id'] + '  title: ' + data['title'];
+      return '<b>id: ' + data['id'] + '</b>  title: ' + data['title'];
     }
 
     // var dm = goog.ds.DataManager.getInstance();
